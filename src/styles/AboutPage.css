@@ -1,0 +1,53 @@
+/* AboutPage.css */
+.about-page-content {
+  padding-top: 4.375rem; 
+  padding-bottom: 4.375rem; 
+  background-color: #151515;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem; 
+  background: #151515;
+  padding: 1.25rem;
+  border: 1px solid #fff;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about-container h2,
+.about-container p {
+  color: #fff;
+}
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .about-page-content {
+    padding-top: 20vh; 
+    padding-bottom: 2rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  
+  .about-container {
+    padding: 1rem; 
+    border-radius: 0.5rem;
+  }
+
+
+  .about-container h2 {
+    font-size: 1.5rem; 
+  }
+
+  .about-container p {
+    font-size: 1rem; 
+  }
+}

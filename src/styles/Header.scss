@@ -1,0 +1,65 @@
+// Header.scss
+$header-search-start-width: 40px;
+$header-search-active-width: 270px;
+$search-translate-distance: -35px;
+$icon-width: 40px; 
+
+.header__search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 1vw;
+
+  .header__search-input {
+    width: $header-search-start-width;
+    padding-right: 35px;
+    padding-left: 35px;
+    height: 40px;
+    opacity: 0;
+    visibility: hidden;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    transition: width 0.5s, visibility 0s;
+    flex-grow: 0; 
+    transform: translateX(-$icon-width);
+    overflow: hidden;
+    font-size: 15px;
+
+    &::placeholder {
+      color: grey;
+    }
+
+    &.active {
+      width: $header-search-active-width;
+      opacity: 1;
+      visibility: visible;
+      flex-grow: 1;
+      transform: translateX(0);
+    }
+
+  }
+
+  &.active .header__search-input {
+    width: $header-search-active-width;
+    opacity: 1;
+    visibility: visible;
+    flex-grow: 1;
+    transform: translateX(0);
+  }
+
+  .header-search-button {
+    color: white;
+    background: transparent;
+    border: none;
+    transition: transform 0.5s;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+
+    &.active {
+      transform: translateX(calc(-#{$header-search-active-width} - #{$search-translate-distance}));
+    }
+  }
+}
