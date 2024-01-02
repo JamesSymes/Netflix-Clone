@@ -69,8 +69,8 @@ const Header = () => {
               {isMobile ? (
                 <span className="header__logo-text">My Netflix</span>
               ) : (
-                <img src="/Netflix_Logo_RGB.png" alt="MovieApp Logo" />
-
+                <img src="/Netflix-Clone/src/assets/Netflix_Logo_RGB.png" alt="MovieApp Logo" />
+                
 
               )}
             </Link>
