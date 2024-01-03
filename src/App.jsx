@@ -16,7 +16,7 @@ const App = () => {
         <Header />
         <div className="app">
           <Routes>
-          {/* <Route path="/" element={<HomePage />} /> */}
+            <Route path="/" element={<HomePage />} />
             <Route path="/Netflix-Clone-React" element={<HomePage />} />
             <Route path="/Netflix-Clone-React/about" element={<AboutPage />} /> 
             <Route path="/Netflix-Clone-React/contact" element={<ContactPage />} />
