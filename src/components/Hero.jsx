@@ -23,7 +23,7 @@ const Hero = () => {
       <img src="/black-mirror-desktop-1.png" alt="Black Mirror" className="hero__image" />
       <div className="hero-title-section">
         <img src="/black-mirror-desktop-title-1.png" alt="Black Mirror" className="hero__title-image" />
-        <p className='hero-description'>Black Mirror, a British dystopian sci-fi series by Charlie Brooker, delves into modern society's unanticipated consequences of new technologies.</p>
+        <p className='hero-description'>Hi Black Mirror, a British dystopian sci-fi series by Charlie Brooker, delves into modern society's unanticipated consequences of new technologies.</p>
         <div className="hero-buttons">
           <button className="hero-button play">
             <FontAwesomeIcon icon={faPlay} /> Play
