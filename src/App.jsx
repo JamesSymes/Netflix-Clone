@@ -17,9 +17,9 @@ const App = () => {
         <div className="app">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/Netflix-Clone-React" element={<HomePage />} />
-            <Route path="/Netflix-Clone-React/about" element={<AboutPage />} /> 
-            <Route path="/Netflix-Clone-React/contact" element={<ContactPage />} />
+            <Route path="/Netflix-Clone" element={<HomePage />} />
+            <Route path="/Netflix-Clone/about" element={<AboutPage />} /> 
+            <Route path="/Netflix-Clone/contact" element={<ContactPage />} />
           </Routes>
         </div>
         <MobileNav />
