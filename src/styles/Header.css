@@ -472,9 +472,10 @@
 }
 
 .header__tv-icon {
-  padding-right: 10vw;
+  /* padding-right: 10vw; */
   color: white; 
   font-size: 20px; 
+  margin-right: 40px;
 }
 
 
@@ -521,7 +522,7 @@
 
   .mobile-search-icon {
     position: absolute;
-    left: 10px; 
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     color: #ddd; 
