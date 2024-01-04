@@ -1,4 +1,5 @@
 .movie-list {
+  position: relative;
   display: flex;
   flex-wrap: nowrap; /* Ensure items do not wrap to the next line */
   gap: 0.5vw;
@@ -9,7 +10,7 @@
   overflow-y: hidden; /* Prevents vertical scroll */
   width: 100%;
   scrollbar-width: none;
-  position: relative;
+  z-index: 1;
 }
 
 
@@ -39,16 +40,30 @@ background-color: #151515;
   position: relative;
 }
 
-.navigation-button-container-left, .navigation-button-container {
+
+
+
+.section-link-container-left {
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
   z-index: 2; /* Ensure it's above the movie list */
 }
 
+.section-link-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2; 
+}
+
+
 .section-link {
   position: relative;
   font-size: 5vw; 
+  margin: 1vw;
   color: white;
   text-decoration: none;
   display: flex;
