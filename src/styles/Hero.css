@@ -122,7 +122,7 @@
 
   .hero__mobile-container {
     position: relative;
-    width: 80vw;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8vh;
@@ -172,7 +172,7 @@
 
 .hero-buttons-mobile {
   position: absolute; 
-  bottom: 0vh; 
+  bottom: 3vh; 
   left: 50%; 
   transform: translateX(-50%); 
   display: flex;
@@ -187,10 +187,9 @@
   cursor: pointer;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s;
-  width: 35.5vw; 
+  width: 39.5vw; 
   justify-content: center;
   margin-bottom: 1.7vh;
 }
@@ -198,6 +197,7 @@
 .hero-button-mobile.play {
   background-color: white;
   color: black;
+  font-weight: bold;
 }
 
 .hero-button-mobile.plus {
